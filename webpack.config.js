@@ -3,7 +3,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: {
-    main: './source/assets/javascripts/index.js'
+    main: './source/assets/javascripts/index.jsx'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -27,18 +27,18 @@ module.exports = {
     ]
   },
 
-  optimization: { 
-    minimize: true, 
-    minimizer: [ 
-      new TerserPlugin({ 
-        cache: true, 
-        parallel: true, 
-        terserOptions: { 
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        cache: true,
+        parallel: true,
+        terserOptions: {
           output: {
             comments: false
           }
         }
-      }), 
+      }),
     ]
   }
 };

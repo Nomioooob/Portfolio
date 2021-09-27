@@ -12,6 +12,10 @@ GEM
     ast (2.4.2)
     autoprefixer-rails (10.3.3.0)
       execjs (~> 2)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     backports (3.21.0)
     builder (3.2.4)
     capybara (3.35.3)
@@ -207,6 +211,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  babel-transpiler
   capybara
   cucumber
   font-awesome-sass (~> 5.13.0)
